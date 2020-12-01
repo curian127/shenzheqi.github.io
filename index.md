@@ -32,7 +32,7 @@
   
 
 ## 研究方向：
-* 资料同化方法([Lorenz63 example](/L63model.md))
+* 资料同化方法([Lorenz63 example](/L63model.html))
 * 耦合资料同化系统
 
 
