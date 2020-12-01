@@ -56,7 +56,7 @@
 14. Youmin Tang, Zheqi Shen, & Yanqiu Gao. (2016). An Introduction to Ensemble-Based Data Assimilation Method in the Earth Sciences. In D. Lee, T. Burg, & C. Volos (Eds.), Nonlinear Systems - Design, Analysis, Estimation and Control (pp. 153–193). London: IntechOpen. 
 15. Zhang, J., Zhang, A., Zhang, X., Zhang, L., Li, D., Shen, Z., & Sun, C. (2020). Targeted observation analysis of the tides and currents in a Coastal Marine Proving Ground. Ocean Dynamics. 
 16. 唐佑民, 郑飞, 张蕴斐, 沈浙奇, 李俊德, & 方玥炜. (2017). 高影响海-气环境事件预报模式的高分辨率海洋资料同化系统研发. 中国基础科学, 19(119), 50–56.
-沈浙奇, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, 38(3), 1–14. 
+17. 沈浙奇, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, 38(3), 1–14. 
   
 
 ## 表彰奖励：
