@@ -1,4 +1,4 @@
-![https://github.com/curian127/curian127.github.io/blob/gh-pages/AGU100.jpg]()
+<img src="/AGU100.jpg" width="100%"> 
 
 ## 学习经历：
 
