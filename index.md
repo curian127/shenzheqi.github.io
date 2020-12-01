@@ -1,4 +1,17 @@
-<img src="/AGU100.jpg" width="100%"> 
+<table border="0">
+  <tr>
+    <td width="40%">
+      <h1>沈浙奇</h1>
+      <p><b>副教授</b></p>
+      <p><b>河海大学海洋学院</b></p>
+      <p><b>邮箱：zqshen@hhu.edu.cn</b></p>
+      <p><b>地址：南京市鼓楼区西康路1号河海大学，电气馆216室，邮编210024</b></p>
+    </td>
+    <td width="60%">
+      <img src="/AGU100.jpg" width="100%">     
+    </td>
+  </tr>
+</table>
 
 ## 学习经历：
 
