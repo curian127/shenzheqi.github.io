@@ -73,6 +73,42 @@
 17. 沈浙奇, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, 38(3), 1–14. 
 
 
+
+## 会议报告
+
+| 表头    | 国际会议                                                     | 举办地              | 报告类型       | 标题                                                         |
+| ------- | ------------------------------------------------------------ | ------------------- | -------------- | ------------------------------------------------------------ |
+| 2013.06 | AOGS2013 11th Annual Meeting                                 | Brisbane, Austrilia | Oral           | A hybrid method of EnKF and SIR-PF for nonlinear systems     |
+| 2014.07 | AOGS2014 12th Annual Meeting                                 | Sapporo, Japan      | Poster         | A modified ensemble Kalman particle filter for data assimilation with nonlinear measurement functio |
+| 2015.08 | International Geographical Union (IGU) 2015 Regional Conference | Moscow, Russia      | Oral           | The modified ensemble Kalman particle filters for data assimilation with nonlinear measurement functions |
+| 2016.04 | EGU General Assembly 2016                                    | Vienna, Austria     | Oral           | 1. Comparison of EAKF and particle filter: towards an ensemble adjustment Kalman particle filter;  2. A modified ensemble Kalman particle filter for non-Gaussian systems with nonlinear measurement functions” |
+| 2016.07 | AOGS2016 14th Annual Meeting                                 | Beijing, China      | Oral           | 1. A New Localized Particle Filter for Nonlinear and Non-Gaussian Data Assimilation;  2. A Modified Ensemble Kalman Particle Filter for Non-Gaussian Systems with Nonlinear Measurement Functions |
+| 2017.06 | 51th Canadian Meteorological and Oceanographic Society (CMOS) Congress | Toronto, Canada     | Oral           | The formulation of vector weights in localized particle filter |
+| 2017.11 | International Coupled Data Assimilation Symposium and the 11th National Ocean Data Assimilation Conference of China | Qingdao, China      | Oral (invited) | Study on the Localization in Ensemble Coupled Data Assimilation Using a Multi-scale Lorenz Model |
+| 2017.11 | Banff International Research Station workshop “Nonlinear and Stochastic Problems in Atmospheric and Oceanic Prediction (17w5061)” | Banff, Canada       | Oral (invited) | Particle filter for data assimilation of nonlinear model systems with non-Gaussian noises |
+| 2019.04 | EGU General Assembly 2019                                    | Vienna, Austria     | Poster         | On the localization in strongly coupled ensemble data assimilation using a two-scale lorenz model |
+| 2019.05 | 9th Korea-China joint workshop on Marine Environmental Forecasting System for the West Pacific Ocean | Jeju, Korea         | Oral           | Recent advances in ocean data assimilation with fully-coupled CESM using EAKF |
+| 2019.12 | AGU 2019                                                     | San Francisco, US   | Poster         | On the Formulation of Vector Weights in Localized Particle   |
+
+
+
+| 时间    | 国内会议                       | 地点   | 报告类型 | 标题                                                       |
+| ------- | ------------------------------ | ------ | -------- | ---------------------------------------------------------- |
+| 2014.10 | 第九届全国海洋资料同化研讨会   | 南京   | 口头报告 | 针对非线性观测算子的集合卡尔曼粒子滤波器的算法研究         |
+| 2015.07 | 第十届全国海洋资料同化会议     | 哈尔滨 | 口头报告 | 非高斯系统资料同化中的粒子滤波器算法研究进展               |
+| 2017.07 | 第一届大气、海洋可预报性研讨会 | 杭州   | 口头报告 | 基于矢量化权重公式和局地化的粒子滤波器实用性算法的研究进展 |
+| 2019.07 | 第二届大气、海洋可预报性研讨会 | 长春   | 口头报告 | 局地化粒子滤波器方法进展与展望                             |
+| 2019.10 | 第十二届全国海洋资料同化会议   | 杭州   | 口头报告 | 基于CESM耦合模式的多源海洋观测资料耦合同化系统             |
+| 2020.12 | 第十三届全国海洋资料同化会议   | 长沙   | 口头报告 | 集合卡尔曼滤波参数估计在CESM耦合同化系统中的应用和挑战     |
+
+
+
+
+
+
+
+
+
 ## 表彰奖励：
 
 
