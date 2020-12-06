@@ -77,3 +77,6 @@
 
 
 ## 学术兼职：
+* 海洋学报英文版（Acta Oceanologica Sinica）审稿人
+* Nonlinear Processes in Geophysics 审稿人
+* 海洋学报中文版 审稿人
