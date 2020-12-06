@@ -76,7 +76,7 @@
 
 ## 会议报告
 
-| 表头    | 国际会议                                                     | 举办地              | 报告类型       | 标题                                                         |
+| 时间    | 国际会议                                                     | 举办地              | 报告类型       | 标题                                                         |
 | ------- | ------------------------------------------------------------ | ------------------- | -------------- | ------------------------------------------------------------ |
 | 2013.06 | AOGS2013 11th Annual Meeting                                 | Brisbane, Austrilia | Oral           | A hybrid method of EnKF and SIR-PF for nonlinear systems     |
 | 2014.07 | AOGS2014 12th Annual Meeting                                 | Sapporo, Japan      | Poster         | A modified ensemble Kalman particle filter for data assimilation with nonlinear measurement functio |
