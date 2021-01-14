@@ -72,7 +72,11 @@
 16. 唐佑民, 郑飞, 张蕴斐, 沈浙奇, 李俊德, & 方玥炜. (2017). 高影响海-气环境事件预报模式的高分辨率海洋资料同化系统研发. 中国基础科学, 19(119), 50–56.
 17. 沈浙奇, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, 38(3), 1–14. 
 
+* Shen, Z., Tang, Y., Li, X., Gao, Y.,(2020) On the localization in strongly coupled ensemble data assimilation using a two-scale Lorenz model,  Earth and Space Science, under review(二审).
 
+* 张钰婷，沈浙奇，伍艳玲 （2020）基于 CESM 模式的局地化粒子滤波器与集合卡尔曼滤波器同化实验，海洋学报，二审
+
+* Shen Z. and Tang, Y. (2021) A two-stage inflation method in parameter estimation to compensate for constant parameter evolution in CESM, submitted to Acta Oceanologica Sinica (special issue: Ocean data assimilation)
 
 ## 会议报告
 
