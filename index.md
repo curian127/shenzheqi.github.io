@@ -23,7 +23,7 @@
 ## 工作经历：
 
 * 2020.7 - 至今 ,河海大学，海洋学院，副教授
-* 2017.11 - 2020.7,自然资源部第二海洋研究所,副研究员
+* 2017.11 - 2020.7,自然资源部第二海洋研究所,副研究员,硕导
 * 2016.11 - 2017.7,加拿大北大不列颠哥伦比亚大学(UNBC),访问学者
 * 2015.11 - 2017.11,国家海洋局第二海洋研究所,助理研究员
 * 2012.7 - 2015.11,国家海洋局第二海洋研究所,博士后
@@ -70,8 +70,10 @@
 13. Yao, Z., Tang, Y., Lian, T., Xu, D., Li, X., Shen, Z., et al. (2019). Roles of atmospheric physics and model resolution in the simulation of two types of El Niño. Ocean Modelling, 101468. 
 14. Youmin Tang, Zheqi Shen, & Yanqiu Gao. (2016). An Introduction to Ensemble-Based Data Assimilation Method in the Earth Sciences. In D. Lee, T. Burg, & C. Volos (Eds.), Nonlinear Systems - Design, Analysis, Estimation and Control (pp. 153–193). London: IntechOpen. 
 15. Zhang, J., Zhang, A., Zhang, X., Zhang, L., Li, D., Shen, Z., & Sun, C. (2020). Targeted observation analysis of the tides and currents in a Coastal Marine Proving Ground. Ocean Dynamics. 
-16. 唐佑民, 郑飞, 张蕴斐, 沈浙奇, 李俊德, & 方玥炜. (2017). 高影响海-气环境事件预报模式的高分辨率海洋资料同化系统研发. 中国基础科学, 19(119), 50–56.
-17. 沈浙奇, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, 38(3), 1–14. 
+16. Han Zhang, Renhao Wu, Dake Chen, Xiaohui Liu, Hailun He, Youmin Tang, Zheqi Shen et al. (2018). Net Modulation of Upper Ocean Thermal Structure by Typhoon Kalmaegi. *Journal of Geophysical Research - Oceans*, *123*(10), 7154–7171. 
+17. Ting Liu, Youmin Tang, Dejian Yang, Yanjie Cheng, Xunshu Song, Zhaolu Hou, Zheqi Shen et al. (2019). The relationship among probabilistic, deterministic and potential skills in predicting the ENSO for the past 161 years. Climate Dynamics. *Climate Dynamics*, *53*(11), 6947–6960.
+18. 唐佑民, 郑飞, 张蕴斐, 沈浙奇, 李俊德, & 方玥炜. (2017). 高影响海-气环境事件预报模式的高分辨率海洋资料同化系统研发. 中国基础科学, 19(119), 50–56.
+19. 沈浙奇, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, 38(3), 1–14. 
 
 * Shen, Z., Tang, Y., Li, X., Gao, Y.,(2020) On the localization in strongly coupled ensemble data assimilation using a two-scale Lorenz model,  Earth and Space Science, under review(二审).
 
@@ -122,4 +124,6 @@
 * Frontiers in Applied Mathematics and Statistics 审稿人
 * Nonlinear Processes in Geophysics 审稿人
 * 海洋学报中文版 审稿人
+
+[Publon CV](https://publons.com/researcher/3771448/zheqi-shen/peer-review/)
 
