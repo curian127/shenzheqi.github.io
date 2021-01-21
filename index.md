@@ -79,8 +79,6 @@
 
 * Shen, Z., Tang, Y., Li, X., Gao, Y.,(2020) On the localization in strongly coupled ensemble data assimilation using a two-scale Lorenz model,  Earth and Space Science, under review(二审).
 
-张钰婷，沈浙奇，伍艳玲 （2020）基于 CESM 模式的局地化粒子滤波器与集合卡尔曼滤波器同化实验，海洋学报，二审
-
 * Shen Z. and Tang, Y. (2021) A two-stage inflation method in parameter estimation to compensate for constant parameter evolution in CESM, submitted to Acta Oceanologica Sinica (special issue: Ocean data assimilation)
 
 ## 会议报告
