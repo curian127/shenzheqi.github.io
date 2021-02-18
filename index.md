@@ -61,7 +61,7 @@
 
 3. **Zheqi Shen** , Youmin Tang, & Xiaojing Li. (2017). A new formulation of vector weights in localized particle filter. Quarterly Journal of the Royal Meteorological Society, 143(709), 3268–3278. 
 
-4. **Shen, Z.** , Tang, Y., Li, X., Gao, Y.,(2021) On the localization in strongly coupled ensemble data assimilation using a two-scale Lorenz model,  Earth and Space Science(accepted for publication)
+4. **Shen, Z.** , Tang, Y., Li, X., Gao, Y.,(2021) On the localization in strongly coupled ensemble data assimilation using a two-scale Lorenz model,  Earth and Space Science(accepted for publication)  [论文讲解和源代码](/CDA_expr.html)
 
 5. Jianxin Zhu, & **Zheqi Shen** . (2011a). Computation of Nonlinear Schrödinger Equation on an Open Waveguide Terminated by a PML. Computer Modeling in Engineering & Sciences(CMES), 71(4), 347–362.
 
