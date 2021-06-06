@@ -65,6 +65,8 @@
 
 **Shen, Z.**, Zhang, X., & Tang, Y. (2016). Comparison and combination of EAKF and SIR-PF in the Bayesian filter framework. *Acta Oceanologica Sinica*, *35*(3), 69–78. https://doi.org/doi: 10.1007/s13131-015-0757-x
 
+**Shen Z**. and Tang, Y. (2021) A two-stage inflation method in parameter estimation to compensate for constant parameter evolution in CESM, Acta Oceanologica Sinica, accepted
+
 Gao, Y., Liu, T., Song, X., **Shen, Z.**, Tang, Y., & Chen, D. (2020). An extension of LDEO5 model for ENSO ensemble predictions. *Climate Dynamics*. https://doi.org/10.1007/s00382-020-05428-7
 
 Li, J., Liang, C., Tang, Y., Liu, X., Lian, T., **Shen, Z.**, & Li, X. (2017). Impacts of the IOD-associated temperature and salinity anomalies on the intermittent Equatorial Undercurrent anomalies. *Climate Dyn*, *51*(4), 1391–1409.
@@ -95,16 +97,13 @@ Zhu, J., & **Shen, Z.** (2011b). Dispersion relation of leaky modes in nonhomoge
 
 Zhu, J., **Shen, Z.**, & Chen, Z. (2012). Dispersion relations of the modes for open nonhomogeneous waveguides terminated by perfectly matched layers. *JOSA B*, *29*(9), 2524–2530.
 
-唐佑民, 郑飞, 张蕴斐, **沈浙奇**, 李俊德, & 方玥炜. (2017). 高影响海-气环境事件预报模式的高分辨率海洋资料同化系统研发. 中国基础科学, *19*(119), 50–56.
-
 张钰婷, **沈浙奇**, & 伍艳玲. (2021). 基于 CESM 模式的局地化粒子滤波器与集合卡尔曼滤波器同化实验. 海洋学报.
+
+唐佑民, 郑飞, 张蕴斐, **沈浙奇**, 李俊德, & 方玥炜. (2017). 高影响海-气环境事件预报模式的高分辨率海洋资料同化系统研发. 中国基础科学, *19*(119), 50–56.
 
 **沈浙奇**, 唐佑民, & 高艳秋. (2016). 集合资料同化方法的理论框架及其在海洋资料同化的研究展望. 海洋学报, *38*(3), 1–14. https://doi.org/10.3969/j.issn.0253-4193.2016.03.001
 
 
-
-
-* **Shen Z**. and Tang, Y. (2021) A two-stage inflation method in parameter estimation to compensate for constant parameter evolution in CESM, submitted to Acta Oceanologica Sinica (special issue: Ocean data assimilation), under review
 
 ## 会议报告
 
