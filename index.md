@@ -1,6 +1,6 @@
 <table border="0">
   <tr>
-    <td width="40%">
+    <td width="50%">
       <h1>沈浙奇</h1>
       <p><b>副教授</b></p>
       <p><b>河海大学海洋学院</b></p>
@@ -8,11 +8,12 @@
       <p><b>QQ号：87727417</b></p>
       <p><b>地址：南京市鼓楼区西康路1号河海大学，电气馆216室，邮编210024</b></p>
     </td>
-    <td width="60%">
+    <td width="50%">
       <img src="/AGU100.jpg" width="100%">     
     </td>
   </tr>
 </table>
+
 
 
 ## 学习经历：
@@ -35,7 +36,7 @@
 ## 研究方向：
 * 资料同化方法([Lorenz63 example](/L63model.html);[Lorenz96 example](/L96model.html))
 * 耦合资料同化系统
-* 参数估计方法也应用
+* 参数估计方法也应用([参数估计结果图](/PEpaperfigures.html))
 
 
 
@@ -43,6 +44,8 @@
 
 * 数据同化理论与方法
 * 业务化海洋学导论
+
+
 
 
 ## 科研项目：
@@ -135,14 +138,6 @@ Zhu, J., **Shen, Z.**, & Chen, Z. (2012). Dispersion relations of the modes for 
 | 2021.6  | 第三届大气、海洋可预报性研讨会 | 扬州   | 口头报告 | CESM耦合模式中的集合滤波器参数估计方法研究和应用           |
 
 
-
-
-
-
-
-
-
-## 表彰奖励：
 
 
 ## 学术兼职：
