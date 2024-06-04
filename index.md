@@ -1,6 +1,6 @@
 <table border="0">
   <tr>
-    <td width="50%">
+    <td width="30%">
       <h1>沈浙奇</h1>
       <p><b>副教授</b></p>
       <p><b>河海大学海洋学院</b></p>
@@ -8,7 +8,7 @@
       <p><b>QQ号：87727417</b></p>
       <p><b>地址：南京市鼓楼区西康路1号河海大学，电气馆216室，邮编210024</b></p>
     </td>
-    <td width="50%">
+    <td width="70%">
       <img src="/AGU100.jpg" width="100%">     
     </td>
   </tr>
@@ -34,9 +34,9 @@
   
 
 ## 研究方向：
-* 资料同化方法([Lorenz63 example](/L63model.html);[Lorenz96 example](/L96model.html))
+* 资料同化方法
 * 耦合资料同化系统
-* 参数估计方法也应用([参数估计结果图](/PEpaperfigures.html))
+* 参数估计方法也应用
 
 
 
@@ -148,3 +148,6 @@ Zhu, J., **Shen, Z.**, & Chen, Z. (2012). Dispersion relations of the modes for 
 
 [Publon CV](https://publons.com/researcher/3771448/zheqi-shen/peer-review/)
 
+
+
+\([Lorenz63 example](/L63model.html);[Lorenz96 example](/L96model.html))
