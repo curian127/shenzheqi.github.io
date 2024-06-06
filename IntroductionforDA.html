@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>IntroductionforDA</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='探秘数据同化大气海洋科学中的信息融合与精准预测'><span>探秘数据同化：大气海洋科学中的信息融合与精准预测</span></h1><p><em><span>河海大学，海洋学院，沈浙奇</span></em></p><p>&nbsp;</p><p><span>在我们的日常生活中，我们经常能够观察到不同元素或事物之间相互影响和融合，从而逐渐使它们趋向相似或相近的现象。这一现象被称为“同化”，它在文化、社会乃至生物体内都有显著体现。以文化多样性为例，不同国家、地区的人们在饮食、服饰、语言等方面都展现出独特特点。然而，随着全球化进程的不断推进，人们之间的交流与互动显著增加，从而引发不同文化逐渐相互渗透，导致一些文化特征逐步同化，即向一致方向演变。我们在不同城市都能见到的大同小异的商圈、美食、快餐文化和网红景点，都是这一现象的具体体现。</span></p><p><span> “同化”一词常指一个事物或个体逐渐融合入或被吸收至另一事物或个体中，以使它们的相似性或同一性逐渐增强。例如，当大学生融入新的集体环境时，尽管一开始可能感到不适应，但随着时间推移和大学生活的深入，逐渐改变的生活习惯、兴趣爱好、思维方式甚至语言表达，使得他们在毕业时展现出所在集体独有的特质。这种属性有时被称作班级氛围、校园文化或大学生气质。在这一过程中，我们常用“同化”来形容这名学生在集体中逐渐融入的变化。</span></p><p><span>类似的“同化”概念在大气海洋科学中也有体现，即数据同化（Data assimilation，也称资料同化），它被定义为一种融合多源数据的方法。在大气和海洋科学中，我们面临着大量来自卫星、浮标、传感器等各种设备的观测数据，记录了地球不同地点和时间的气象和海洋状况。然而，这些数据可能受到噪声、缺失或不完整性的影响。另一方面，数值模型是人类智慧的结晶，这些模型利用计算机求解数学物理方程，可以得到大量数据以模拟现实世界中的物理现象。</span></p><p><span>在数据同化的背后，蕴藏着一种朴素的思想：我们试图将观测数据与数值模型结合，以获取更准确、更全面的信息。这个过程类似于日常生活中的文化融合，不同之处在于我们融合的是数据和模型，目的是获取精确的科学预测（图1）。</span></p><p><img src="/Users/shenzheqi/Library/Application Support/typora-user-images/image-20240605232528210.png" referrerpolicy="no-referrer" alt="image-20240605232528210"></p><blockquote><p><em><span>图1. 在大气海洋科学中，数据同化指的是将观测数据与数值模型结合，以获取更准确、更全面的信息的一个过程。</span></em></p></blockquote><p>&nbsp;</p><p><span>数据同化的概念起源于数值天气预报领域，最初旨在为大气数值模型提供可靠的初始条件。自20世纪40年代起，科学家们开始运用计算机模拟大气运动，首次尝试以数值方法求解描述大气运动规律的物理方程，从而预测未来的天气变化。使用数值计算方法求解的微分方程就是所谓的数值模型（也称“数值模式”）。实际上，无论是短期的天气预报还是长期的气候预测，都可视为在给定初始条件下对数值模型的积分。因此，天气和气候预报均可以被视为初值问题，初始条件的准确性对预报结果具有深远影响。这种影响一个比喻就是“蝴蝶效应”，即蝴蝶在巴西的振翅可能引发美国得克萨斯州的龙卷风。在复杂的天气系统中，微小初始变化可能引发系统内部的连锁反应，从而导致无法预测的重大后果。因此，准确的初始条件对预报效果至关重要。</span></p><p><span>20世纪的大气观测技术不断进步，气象卫星、雷达技术以及探空观测的发展，为科学家提供了更多、更精确的气象数据，为气象研究和天气预报的改进提供了坚实基础。因此，在20世纪后半叶，随着数据收集技术的改进，数据同化技术被提出来并应用于天气预报。数据同化通过将观测与数值模型结合，为模型提供更可靠的初始条件，进一步提升了天气预报的准确性。近几十年来数值天气预报的迅速发展很大程度上得益于数据同化技术的发展（图2）。作为一种有效融合观测数据与数值模型的技术，数据同化对于提高天气预报的准确性、时效性和可靠性起到了至关重要的作用。</span></p><p>&nbsp;</p><p><img src="https://pic1.zhimg.com/80/f9610f99262877b3619ef5fb6f306d0c_1440w.webp" referrerpolicy="no-referrer" alt="img"></p><blockquote><p><em><span>图2.</span></em><span> </span><em><span>以热带以外的北半球和南半球计算的三天、五天、七天和十天的预报技巧。预报技巧是在500百帕高度层上的预报和用于验证的分析场各自对气候平均高度的异常之间的相关性。超过60%的数值表示可用的预报，超过80%的数值表示准确度很高。1999年之后北半球和南半球曲线的收敛是由于使用变分方法处理卫星资料带来的突破。</span></em></p></blockquote><p><span>除了改善初始条件外，数据同化还有其他几个应用方面。例如，数据同化可通过观测数据来估计和约束数值模型的参数。由于科学认知和技术限制，许多数值模型的物理参数是经验或半经验性的，存在较大的不确定性。特别是在数值模型的分辨率无法刻画一些小尺度过程时，需要引入参数化方案来描述物理过程。而一些复杂的动力过程，如涡旋、湍流、海洋垂直混合等，也需引入参数化方案以弥补目前对其认知的限制（图3）。数据同化可以借助观测数据来优化估计这些参数，减小其不确定性，这一过程被称为参数估计。</span></p><p><img src="/Users/shenzheqi/Pictures/OceanProcSchem_sm.jpg" referrerpolicy="no-referrer" alt="OceanProcSchem_sm"></p><blockquote><p><em><span>图3. 海洋中的小尺度混合过程示意图 (引自：</span><a href='http://www.gfdl.noaa.gov/ocean-mixing' target='_blank' class='url'>http://www.gfdl.noaa.gov/ocean-mixing</a><span>)</span></em></p></blockquote><p><span>此外，数据同化还能通过分析和吸收特定变量（如海洋温度）的观测数据，提升数值模型的整体模拟能力。这使得即便在没有观测数据支持的网格点上，也能获得高质量的状态估计，这一过程被称为数据同化再分析。当前，许多再分析产品作为观测数据的替代品已广泛应用，如美国国家环境预报中心的再分析数据集（NCEP Reanalysis Dataset）和美国国家环境信息中心的海洋再分析产品（GODAS）等。</span></p><p><span>正如前面介绍的，数据同化起源于大气科学中的数值天气预报。除了大气科学，数据同化迅速在其他地球科学领域得到应用，如海洋科学、陆地表层科学和固体地球等。当下，数据同化已经成为地球系统科学各分支领域通用的方法论。</span></p><p><span>在海洋科学中，数据同化的发展稍晚，但发展迅速。这要归功于一系列观测技术的创新发展，如卫星观测、海洋浮标和阵列技术，以及国际合作项目的推动，如ARGO国际观测网络和GOOS全球海洋观测系统。随着数据量的增加，适用于海洋数值模型的同化方法也得到相应的提升。近30年来，广泛应用的数据同化方法之一——集合卡尔曼滤波器（EnKF）就是在海洋科学领域中诞生的。</span></p><p><span>数据同化方法通常可分为两类：变分方法和滤波器同化方法。变分方法源于控制论的最优控制，通过优化目标函数来最优估计动力系统的状态。这一方法最早应用于大气数据同化，取得了巨大成功。从三维变分到四维变分（4D-Var），从单一大气模型到全球耦合模型，变分方法在大气科学中得到广泛应用，其中的典型代表就是欧洲中期天气预报中心（ECMWF）的基于四维变分同化的业务预报系统。</span></p><p><span>另一类滤波器同化方法基于贝叶斯理论，也称为顺序数据同化方法，其中最经典的是集合卡尔曼滤波器（Ensemble Kalman Filter，EnKF）。卡尔曼滤波器是控制论中经典的方法，在20世纪60年代被提出，并在阿波罗登月计划中发挥了关键作用。然而，真正使其在大气海洋科学中得以应用的是挪威海洋学家盖尔·埃文森（Geir Evensen）于1994年开发的集合卡尔曼滤波器。集合卡尔曼滤波器将集合预报中的集合概念与卡尔曼滤波器相结合，兼顾了算法中的技术难题，并无缝衔接了集合预报。</span></p><p><span>需要注意的是，集合预报在数值天气预报的历史进程中占据着显著地位，对于应对天气系统固有的混沌不确定性至关重要。基于我们前面提到的蝴蝶效应，无法确保我们获得的初始值是真实可靠的。因此，采用多个引入微小扰动的初始值进行模拟是必要的，这样可以获得多个差异明显的预测结果。这些模拟结果揭示了微小初始条件差异对预测结果的深远影响，其中很多结果甚至呈现截然相反的趋势。这些预测结果的集合为天气预报使用者提供了不同概率的预测结果，这种概率预测源于科学且至关重要。</span></p><p><span>在海洋科学以及其他地球科学领域，集合方法也是描绘预测对象不确定性的有效策略。当前，许多业务化研究机构和预报中心已经在实际应用中使用基于集合的同化系统（图4），其中包括美国国家环境预报中心采用的变分-集合混合同化系统以及加拿大气象中心所应用的EnKF同化系统等。</span></p><p>&nbsp;</p><p><img src="/var/folders/7t/1pgzjvcn36gcz8m3mx1cvmjm0000gn/T/com.yinxiang.Mac/com.yinxiang.Mac/WebKitDnD.5A8tey/02dbfd725914f6eea335bb096a5b2744_r.jpg" referrerpolicy="no-referrer" alt="02dbfd725914f6eea335bb096a5b2744_r"></p><blockquote><p><em><span>图4. 用于估计英国降水概率的36小时集合预报示意图。 单一预报（中间红框）通过将模式从初始大气状态分析场（左侧）向前进行时间积分获得。在已知的分析误差内的对分析场的小扰动能够提供一组预报解的集合，这一集合对预报的不确定性加以代表（中间的多个框）。将这些预报解以一些空间相邻采样方法相结合便可提供平滑的降水概率估计（右侧）。图片来自K. Mylne（英国气象办公室）。</span></em></p></blockquote><p>&nbsp;</p><p><span>总的来说，数据同化在海洋科学领域的主要意义体现在填补观测数据不足以及改善模型性能两个方面。由于地理、技术和经济等因素的限制，海洋观测数据存在分布不均匀、时间间隔不连续等问题。海洋数据同化通过将有限的观测数据与数值模型相结合，能够更全面、连续地描述海洋状态和变化，从而弥补观测数据不足的缺陷。这一方法有助于对一些缺乏直接观测数据的海洋现象（如混合、涡旋等）进行研究，从而拓展我们对海洋过程的认识。另一方面，数值模型是理解海洋运动和变化的重要工具，但模型本身可能存在误差。数据同化可以通过优化模型的初始状态和参数，减少模型误差，使得模型更准确地模拟海洋系统并提供更精确的海洋预报。这种方法在改善模型预测性能、减少预测偏差方面发挥着重要作用，进一步提升了海洋科学的可靠性和实用性。通过数据同化，我们能够更好地理解海洋的动态变化、相互作用以及其对全球气候系统的影响，为海洋科学研究和应用提供了有力的支持。</span></p><p><span>可以毫不夸张地说，数据同化是数值预报中不可或缺的关键技术，也是实现更精准预报的秘密武器。它的价值首要体现在预报领域，但其影响不仅止于此，更是一种高效利用所有可用数据（包括基于理论的数值模型和实践中获得的观测数据）的有效手段。甚至在日常生活中，数据同化的思想也在影响着我们。举例来说，当我们使用导航应用时，该应用会融合实时交通数据、卫星定位信息以及道路网络数据，以预测交通情况并为我们规划最佳路线。许多人也借助健康和健身追踪器（如智能手环、智能手表）收集运动、睡眠、心率等数据，并将这些数据与预设模型相结合，计算出个人的健康指标。甚至在金融市场上，分析师常常整合历史交易数据、经济指标和市场模型，以预测股票价格、汇率等。这些模型和预测方法可能各有差异，但都体现了数据同化的思想——即将数据与模型融合在一起。</span></p><p><span>数据同化不仅在科学研究和工程领域中具有重要地位，还在日常决策和判断中扮演关键角色。它提供了一种整合信息、优化预测的方法，使我们能够更好地利用有限的数据来做出准确的判断和决策。这种思想在各个领域的应用，进一步凸显了数据同化的普适性和价值。在当前的大数据时代下，数据同化也将具有更广阔的发展和应用前景。</span></p></div></div>
+</body>
+</html>
