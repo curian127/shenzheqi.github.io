@@ -7489,10 +7489,7 @@ a.anchor-link {
 <p>数值实验依赖于数值模式，而所谓的数值模式（在本学科中，它是“数值预报模式”的简称）是一种基于数学模型和计算机算法来预测天气、气候、海洋流动等自然现象的系统。这种模式通过将地球大气或海洋的物理过程转化为数学方程组，然后使用数值方法求解这些方程组来预测未来的环境状态。</p>
 <p>我们采用的数值实验方法被称为孪生实验。孪生试验是一种经典的数值试验框架。因为在现实情况下，真实的状态值往往是未知的，而且有噪声的观测值是由观测设备收集的，代价较高。为了测试算法，需要事先知道真实的状态，以便评估所开发算法的收敛性和准确性。在孪生试验中，首先根据动力模式和实际情况的相似性，选择一个模式作为测试案例。通过固定所有参数和运行模式积分，计算出一个参考的真值轨迹，直到达到某个最终时间。然后通过在空间和时间的某些点上对真值进行取样来合成“观测值”。可以在离散时间直接或者间接地对部分模式变量进行观测，并人为地添加任意的随机噪声(如高斯白噪声)。使用相应的数据同化技术，从有误差的状态变量初值或不准确的模式参数，利用合成的观测数据开始同化试验。利用算法的输出数据与真值进行比较，可以评估其性能。孪生试验可以高效地评估不同的同化方法和/或观测噪声水平的影响，而不需要使用真正的观测手段。在这个意义上，孪生试验的概念在数据同化的研究中很受欢迎。</p>
 <p>由美国数学家、气象学家洛伦茨(Edward Norton Lorenz，1917~2008年)提出的数值模式经常用于数值天气预报研究，是在孪生试验中被广泛使用的测试模式。Lorenz63模式(Lorenz，1963)是大气可预报性研究中的经典数值模式，其控制方程为</p>
-<p>$$\frac{dx}{dt}=\sigma(y-x) \qquad (1)$$
-$$\frac{dy}{dt}=\rho x-y-xz \qquad (2)$$
-$$\frac{dz}{dt}=xy-\beta z \qquad (3)$$</p>
-<p>Lorenz63模型是对洛伦茨的关于大气对流的12变量模型的进一步简化，凭借这个模型，他发现了确定性的非周期流，后人将其称为一种“混沌”现象。在这个简化的模型中，他定义了新的三个变量，将大气对流运动中非周期的部分进行了保留。在方程中，x与对流运动的强度成正比,y与上升流和下降流之间的温度差成正比,z与垂直温度曲线与线性的差异成正比。其中$\sigma$, $\rho$ 和 $\beta$是参数，分别为Prandtl数，Rayleigh数和一个与求解区域相关的参数。洛伦茨的工作说明，当Rayleigh较大时，整个系统呈现较强的非线性，从而导致复杂的混沌现象。所以在实验中，参数的数值一般设置为10,28,8/3。</p>
+$$\frac{dx}{dt}=\sigma(y-x) \qquad (1)$$$$\frac{dy}{dt}=\rho x-y-xz \qquad (2)$$$$\frac{dz}{dt}=xy-\beta z \qquad (3)$$<p>Lorenz63模型是对洛伦茨的关于大气对流的12变量模型的进一步简化，凭借这个模型，他发现了确定性的非周期流，后人将其称为一种“混沌”现象。在这个简化的模型中，他定义了新的三个变量，将大气对流运动中非周期的部分进行了保留。在方程中，x与对流运动的强度成正比,y与上升流和下降流之间的温度差成正比,z与垂直温度曲线与线性的差异成正比。其中$\sigma$, $\rho$ 和 $\beta$是参数，分别为Prandtl数，Rayleigh数和一个与求解区域相关的参数。洛伦茨的工作说明，当Rayleigh较大时，整个系统呈现较强的非线性，从而导致复杂的混沌现象。所以在实验中，参数的数值一般设置为10,28,8/3。</p>
 </div>
 </div>
 </div>
@@ -7508,7 +7505,7 @@ $$\frac{dz}{dt}=xy-\beta z \qquad (3)$$</p>
 <p>NumPy是Python的一个基础科学计算库，全称为Numerical Python。它提供高性能的多维数组对象ndarray和矩阵运算，广泛应用于数值计算、数据分析、机器学习、图像处理等领域。NumPy的优势在于其简洁的API、高效的内存使用和广泛的社区支持，是进行大规模数据处理和科学计算的首选工具。</p>
 <p>我相信大部分读者已经具备运行python代码的基础。如果没有的话，我提供一个最简单的配置环境方案如下：</p>
 <ol>
-<li>下载anaconda: <a href="https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Windows-x86_64.exe%EF%BC%8C">https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Windows-x86_64.exe，</a>
+<li>下载anaconda: <a href="https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Windows-x86_64.exe%EF%BC%8C">https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Windows-x86_64.exe%EF%BC%8C</a>
 运行安装器装上整个anaconda</li>
 <li>打开Anaconda，就像打开一个应用市场，目前里面有用的几个是“Spyder”，“Jupyter-notebook”</li>
 <li>numpy和matplotlib两个扩展包一般都是默认安装的，但是在运行python编程的时候总会有一些扩展包需要主动安装，这里以此为例介绍如何用conda install命令安装扩展包: 如果是windows环境可以使用Anaconda Prompt打开命令界面（这可以通过在Windows搜索栏中输入"Anaconda Prompt"并选择它来完成）。在命令行分别运行命令: conda install numpy 和 conda install matplotlib （以后使用conda install *** 可以按照python需要的各种包）</li>
@@ -7999,50 +7996,6 @@ $$\frac{dz}{dt}=xy-\beta z \qquad (3)$$</p>
 <li>将模式积分到有观测的时刻，然后使用数学方法将两者组合，输出分析场，再作为初值放回模式积分。</li>
 </ol>
 <p>通过代码，我大致介绍了：什么是数值模式，怎样进行数值积分，Lorenz63模式的数值积分结果体现的“混沌”概念（解对初值的敏感性），孪生实验怎么做，基于3D-Var的数据同化发挥了什么作用。</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=aa066e70">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">xbi</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[7], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> xbi
-
-<span class="ansi-red-fg">NameError</span>: name 'xbi' is not defined</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[7], line 1</span>
-<span class="ansi-green-fg">----&gt; 1</span> xbi
-
-<span class="ansi-red-fg">NameError</span>: name 'xbi' is not defined</pre>
-</div>
 </div>
 </div>
 </div>
